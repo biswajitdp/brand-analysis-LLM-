@@ -120,7 +120,7 @@ Write insights in a concise, professional, data-backed format.
 # --------------------------
 st.markdown("---")
 
-brand_name = st.text_input("🏷️ Enter Brand Name", "Digital Piloto")
+brand_name = st.text_input("🏷️ Enter Brand Name")
 uploaded_file = st.file_uploader("📂 Upload Your CSV File", type=["csv"])
 
 if uploaded_file:
@@ -155,3 +155,4 @@ if uploaded_file:
         st.error(f"❌ Error: {e}")
 else:
     st.info("👆 Please upload a CSV file to begin analysis.")
+
